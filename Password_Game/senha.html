@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Senha</title>
+  <link rel="stylesheet" href="senha.css">
+  <!-- Adicionando link para a fonte Roboto do Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Bulls</span> and Cows</h1>
+      </div>
+    </div>
+  </header>
+  <p id="name"><h2>Adivinhe o número de quatro dígitos:</h2></p>
+  <div id="input-container">
+    <input class="input-field" type="text" maxlength="1" />
+    <input class="input-field" type="text" maxlength="1" />
+    <input class="input-field" type="text" maxlength="1" />
+    <input class="input-field" type="text" maxlength="1" />
+  </div>
+  <button onclick="checkGuess()">Verificar</button>
+  <p id="result"></p>
+
+
+  <script src="senha.js"></script>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>Meu Portfólio © 2024</p>
+    </div>
+  </footer>
+</body>
+</html>
