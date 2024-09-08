@@ -4,7 +4,7 @@ Bem-vindo ao meu portfólio de projetos! 🚀 Aqui você encontrará uma coleç�
 
 ## Tecnologias que utilizo:
 - **Linguagens:** Java, Kotlin, JavaScript, C++
-- **Frameworks:** Spring Boot, React, Node.js
+- **Frameworks:** Spring Boot
 - **Ferramentas:** Git, SQL,
 - **Outras áreas:** Design Patterns, Computação Gráfica
 
@@ -12,7 +12,7 @@ Sinta-se à vontade para explorar e clonar os repositórios. Fique à vontade ta
 
 ---
 
-**Contato:** [meuemail@email.com](mailto:meuemail@email.com)  
+**Contato:** [meuemail@email.com](3.victorsouza@gmail.com)  
 **LinkedIn:** [Meu LinkedIn](https://www.linkedin.com/in/victor-santos-59a886220/)
 **Instagram:** [Meu Instagram](https://www.instagram.com/victor_santos674/) 
 **Threads:** [Meu Threads](https://www.threads.net/@victor_santos674) 
