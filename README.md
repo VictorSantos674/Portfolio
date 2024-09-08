@@ -12,7 +12,7 @@ Sinta-se à vontade para explorar e clonar os repositórios. Fique à vontade ta
 
 ---
 
-**Contato:** [meuemail@email.com](3.victorsouza@gmail.com)  
+**E-mail:** [3.victorsouza@gmail.com](3.victorsouza@gmail.com)  
 **LinkedIn:** [Meu LinkedIn](https://www.linkedin.com/in/victor-santos-59a886220/)
 **Instagram:** [Meu Instagram](https://www.instagram.com/victor_santos674/) 
 **Threads:** [Meu Threads](https://www.threads.net/@victor_santos674) 
