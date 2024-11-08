@@ -6,7 +6,7 @@ Bem-vindo ao meu portfólio de projetos! 🚀 Aqui você encontrará uma coleç�
 - **Linguagens:** Java, Kotlin, JavaScript, C++
 - **Frameworks:** Spring Boot
 - **Ferramentas:** Git, SQL,
-- **Outras áreas:** Design Patterns, Computação Gráfica
+- **Outras áreas:** Bando de Dados, Computação Gráfica, etc.
 
 Sinta-se à vontade para explorar e clonar os repositórios. Fique à vontade também para abrir issues, dar sugestões ou contribuir com qualquer projeto. Vamos aprender juntos! 😊
 
