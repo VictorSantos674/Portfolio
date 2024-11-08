@@ -1,3 +1,16 @@
+/* Centralizar o texto do título e descrição */
+.centered {
+  text-align: center;
+  margin-bottom: 20px; /* Espaço inferior para separar do conteúdo */
+}
+
+.centered-text {
+  text-align: center;
+  line-height: 1.8; /* Melhor legibilidade */
+  margin: 0 auto; /* Centraliza no container */
+  max-width: 800px; /* Limita a largura para manter o foco visual */
+}
+
 /* Reset e configurações globais */
 body, html {
   margin: 0;
