@@ -1,15 +1,28 @@
-/* Centralizar o texto do título e descrição */
+/* Centralizar conteúdo da seção */
 .centered {
   text-align: center;
-  margin-bottom: 20px; /* Espaço inferior para separar do conteúdo */
+  display: flex;
+  flex-direction: column; /* Layout em coluna para alinhar foto e texto */
+  align-items: center;
 }
 
-.centered-text {
-  text-align: center;
-  line-height: 1.8; /* Melhor legibilidade */
-  margin: 0 auto; /* Centraliza no container */
-  max-width: 800px; /* Limita a largura para manter o foco visual */
+/* Estilo da foto de perfil */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Bordas arredondadas */
+  object-fit: cover; /* Ajuste sem distorções */
+  margin-bottom: 20px; /* Espaço entre imagem e texto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
 }
+
+/* Títulos das seções */
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2b3a67; /* Cor azul do cabeçalho */
+}
+
 
 /* Reset e configurações globais */
 body, html {
@@ -51,8 +64,9 @@ header nav ul li a:hover {
 
 /* Sobre */
 #sobre {
-  background-color: #ffffff; /* Fundo branco limpo */
+  background-color: #eef2f3; /* Mesmo tom do restante da página */
   padding: 50px 20px;
+  color: #333; /* Contraste adequado para texto */
 }
 
 .about {
@@ -84,10 +98,12 @@ header nav ul li a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
 }
 
+/* Texto da descrição */
 .sobre-texto {
-  flex: 1; /* Garante que o texto ocupe o espaço restante */
-  line-height: 1.6;
-  text-align: justify;
+  text-align: center; /* Texto centralizado */
+  line-height: 1.8; /* Melhor legibilidade */
+  max-width: 800px; /* Largura máxima para manter o foco visual */
+  margin: 0 auto; /* Centraliza o texto no container */
 }
 
 /* Rodapé */
