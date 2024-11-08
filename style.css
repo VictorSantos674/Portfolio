@@ -1,4 +1,4 @@
-/* Reset CSS básico */
+/* Reset e configurações globais */
 body, html {
   margin: 0;
   padding: 0;
@@ -6,152 +6,104 @@ body, html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f7f7;
-}
-
-/* Estilo para links */
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-a:hover {
-  color: orangered;
-}
-
-/* Estilos gerais */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f3; /* Fundo ameno */
+  color: #333; /* Texto mais escuro para contraste */
 }
 
 /* Cabeçalho */
 header {
-  background: #333;
-  color: #fff;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: blue 3px solid;
+  background: #2b3a67; /* Azul mais discreto */
+  color: white;
+  padding: 20px 0;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.highlight {
-  color: blue;
-}
-
-#branding h1 {
-  margin: 0;
-}
-
-nav ul {
+header nav ul {
   list-style: none;
-  margin: 0;
+  display: flex;
+  justify-content: center;
   padding: 0;
+  margin: 0;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
 }
 
-nav ul li:last-child {
-  margin-right: 0;
+header nav ul li a:hover {
+  color: #a5c9f1; /* Destaque em azul claro */
 }
 
-nav ul li a {
-  color: #fff;
-}
-
-/* Seções */
-section {
-  padding: 50px 0;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+/* Sobre */
+#sobre {
+  background-color: #ffffff; /* Fundo branco limpo */
+  padding: 50px 20px;
 }
 
 .about {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Texto alinhado no topo da imagem */
+  gap: 20px;
 }
 
 .profile-pic {
   width: 200px;
-  height: auto;
-  margin-right: 20px;
+  height: 200px;
+  border-radius: 50%; /* Bordas arredondadas */
+  object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
 }
 
 .sobre-texto {
+  flex: 1; /* Garante que o texto ocupe o espaço restante */
+  line-height: 1.6;
   text-align: justify;
-  line-height: 1.5;
-  max-width: 600px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+}
+
+/* Rodapé */
+footer {
+  background: #2b3a67; /* Mesmo azul do cabeçalho */
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Projetos */
 .project-boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .project {
-  flex: 0 0 calc(30% - 20px);
-  margin-bottom: 20px;
+  flex: 1 1 calc(33% - 20px);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .project img {
-  width: 200px; /* Defina a largura desejada */
-  height: 200px; /* Defina a altura desejada */
-  border-radius: 50%; /* Torna as bordas totalmente circulares */
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
-/* Contato */
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.social-links a {
-  margin-right: 20px;
-}
+  .profile-pic {
+    margin: 0 auto;
+  }
 
-.social-links img {
-  width: 40px;
-  height: 40px;
-}
-
-/* Rodapé */
-footer {
-  background-color: blue;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-/* Botão de rolagem para o topo */
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-}
-
-.scroll-to-top img {
-  width: 40px;
-  height: 40px;
+  .project {
+    flex: 1 1 100%;
+  }
 }
