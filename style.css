@@ -57,6 +57,21 @@ header nav ul li a:hover {
 
 .about {
   display: flex;
+  align-items: center;
+  flex-direction: column; /* Força o layout em coluna para centralizar */
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Destaque */
+}
+
+.about {
+  display: flex;
   align-items: flex-start; /* Texto alinhado no topo da imagem */
   gap: 20px;
 }
