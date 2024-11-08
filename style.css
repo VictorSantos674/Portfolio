@@ -69,6 +69,39 @@ header nav ul li a:hover {
   color: #333; /* Contraste adequado para texto */
 }
 
+/* Centralizar conteúdo da seção */
+.centered {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Seção Projetos */
+#projetos {
+  background-color: #eef2f3; /* Fundo consistente com o restante */
+  padding: 50px 20px;
+}
+
+.project-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centralizar os projetos */
+  gap: 20px; /* Espaço entre os projetos */
+}
+
+/* Seção Contato */
+#contato {
+  background-color: #eef2f3; /* Fundo consistente com o restante */
+  padding: 50px 20px;
+}
+
+#contato p {
+  max-width: 600px; /* Limita o texto para manter foco visual */
+  line-height: 1.6; /* Melhor legibilidade */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
 .about {
   display: flex;
   align-items: center;
