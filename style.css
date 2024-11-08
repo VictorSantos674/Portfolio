@@ -106,6 +106,24 @@ header nav ul li a:hover {
   margin: 0 auto; /* Centraliza o texto no container */
 }
 
+/* Redes sociais */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaço reduzido entre os ícones */
+}
+
+.social-links img {
+  width: 24px; /* Reduzido para um tamanho pequeno */
+  height: 24px; /* Proporcional à largura */
+  transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.social-links img:hover {
+  transform: scale(1.2); /* Leve aumento ao passar o mouse */
+}
+
 /* Rodapé */
 footer {
   background: #2b3a67; /* Mesmo azul do cabeçalho */
