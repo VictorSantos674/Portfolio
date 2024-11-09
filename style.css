@@ -1,4 +1,4 @@
-/* Centralização e acessibilidade */
+/* Centralização reutilizável */
 .centered {
   text-align: center;
   display: flex;
@@ -6,15 +6,7 @@
   align-items: center;
 }
 
-.profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+/* Reset e configurações globais */
 body, html {
   margin: 0;
   padding: 0;
@@ -28,10 +20,17 @@ body {
   line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
   background: #2b3a67;
   color: white;
   padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
 }
 
 header nav ul {
@@ -39,7 +38,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 10px 0 0;
 }
 
 header nav ul li a {
@@ -52,120 +51,11 @@ header nav ul li a:hover {
   color: #a5c9f1;
 }
 
-.project-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-links img {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
-}
-
-/* Estilo da foto de perfil */
-.profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; /* Bordas arredondadas */
-  object-fit: cover; /* Ajuste sem distorções */
-  margin-bottom: 20px; /* Espaço entre imagem e texto */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
-}
-
-/* Títulos das seções */
+/* Seções */
 h2 {
   font-size: 28px;
+  color: #2b3a67;
   margin-bottom: 20px;
-  color: #2b3a67; /* Cor azul do cabeçalho */
-}
-
-
-/* Reset e configurações globais */
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #eef2f3; /* Fundo ameno */
-  color: #333; /* Texto mais escuro para contraste */
-}
-
-/* Cabeçalho */
-header {
-  background: #2b3a67; /* Azul mais discreto */
-  color: white;
-  padding: 20px 0;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-}
-
-header nav ul li a:hover {
-  color: #a5c9f1; /* Destaque em azul claro */
-}
-
-/* Sobre */
-#sobre {
-  background-color: #eef2f3; /* Mesmo tom do restante da página */
-  padding: 50px 20px;
-  color: #333; /* Contraste adequado para texto */
-}
-
-/* Centralizar conteúdo da seção */
-.centered {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Seção Projetos */
-#projetos {
-  background-color: #eef2f3; /* Fundo consistente com o restante */
-  padding: 50px 20px;
-}
-
-.project-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centralizar os projetos */
-  gap: 20px; /* Espaço entre os projetos */
-}
-
-/* Seção Contato */
-#contato {
-  background-color: #eef2f3; /* Fundo consistente com o restante */
-  padding: 50px 20px;
-}
-
-#contato p {
-  max-width: 600px; /* Limita o texto para manter foco visual */
-  line-height: 1.6; /* Melhor legibilidade */
-  margin-bottom: 20px; /* Espaçamento inferior */
-}
-
-.about {
-  display: flex;
-  align-items: center;
-  flex-direction: column; /* Força o layout em coluna para centralizar */
-  gap: 20px;
 }
 
 .profile-pic {
@@ -173,47 +63,42 @@ header nav ul li a:hover {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Destaque */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.about {
+/* Projetos */
+.project-boxes {
   display: flex;
-  align-items: flex-start; /* Texto alinhado no topo da imagem */
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
-.profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; /* Bordas arredondadas */
-  object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+.project {
+  flex: 1 1 calc(33% - 20px);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Texto da descrição */
-.sobre-texto {
-  text-align: center; /* Texto centralizado */
-  line-height: 1.8; /* Melhor legibilidade */
-  max-width: 800px; /* Largura máxima para manter o foco visual */
-  margin: 0 auto; /* Centraliza o texto no container */
+.project img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 /* Redes sociais */
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px; /* Espaço reduzido entre os ícones */
-}
-
 .social-links img {
-  width: 24px; /* Reduzido para um tamanho pequeno */
-  height: 24px; /* Proporcional à largura */
-  transition: transform 0.3s ease; /* Animação ao passar o mouse */
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
 }
 
 .social-links img:hover {
-  transform: scale(1.2); /* Leve aumento ao passar o mouse */
+  transform: scale(1.2);
 }
 
 /* Rodapé */
@@ -222,113 +107,4 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-}
-
-/* Projetos */
-.project-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.project {
-  flex: 1 1 calc(33% - 20px);
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.project img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-/* Ajustes para dispositivos menores */
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-pic {
-    margin: 0 auto;
-  }
-
-  .project {
-    flex: 1 1 100%;
-  }
-}
-
-/* Centralização e estilo geral */
-.centered {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Cabeçalho */
-header {
-  background: #2b3a67;
-  color: white;
-  padding: 20px 0;
-  text-align: center; /* Centraliza o título do projeto */
-}
-
-header h1 {
-  font-size: 36px;
-  margin: 0;
-}
-
-/* Títulos das seções */
-h2 {
-  font-size: 28px;
-  color: #2b3a67;
-  text-align: center; /* Centraliza todos os títulos */
-  margin-bottom: 20px;
-}
-
-/* Foto de perfil */
-.profile-pic {
-  display: block; /* Garante que a imagem seja tratada como bloco */
-  margin: 0 auto; /* Centraliza a imagem horizontalmente */
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; /* Bordas arredondadas */
-  object-fit: cover; /* Ajuste proporcional sem distorção */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
-}
-
-/* Sobre */
-.sobre-texto {
-  max-width: 800px;
-  line-height: 1.8;
-  text-align: center; /* Centraliza o texto */
-  margin: 0 auto;
-}
-
-/* Seção Projetos */
-.project-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.project {
-  flex: 1 1 calc(33% - 20px);
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.project img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
 }
