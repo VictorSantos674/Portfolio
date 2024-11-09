@@ -1,9 +1,68 @@
-/* Centralizar conteúdo da seção */
+/* Centralização e acessibilidade */
 .centered {
   text-align: center;
   display: flex;
-  flex-direction: column; /* Layout em coluna para alinhar foto e texto */
+  flex-direction: column;
   align-items: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f3;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #2b3a67;
+  color: white;
+  padding: 20px 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+header nav ul li a:hover {
+  color: #a5c9f1;
+}
+
+.project-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
 }
 
 /* Estilo da foto de perfil */
@@ -159,10 +218,10 @@ header nav ul li a:hover {
 
 /* Rodapé */
 footer {
-  background: #2b3a67; /* Mesmo azul do cabeçalho */
+  background: #2b3a67;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px 0;
 }
 
 /* Projetos */
