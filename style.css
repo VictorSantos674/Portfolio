@@ -25,7 +25,7 @@ header {
   background: #2b3a67;
   color: white;
   padding: 20px 0;
-  text-align: center;
+  text-align: center; /* Centraliza o título do projeto */
 }
 
 header h1 {
@@ -55,6 +55,7 @@ header nav ul li a:hover {
 h2 {
   font-size: 28px;
   color: #2b3a67;
+  text-align: center; /* Centraliza todos os títulos */
   margin-bottom: 20px;
 }
 
