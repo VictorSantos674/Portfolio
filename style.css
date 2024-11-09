@@ -293,12 +293,13 @@ h2 {
 
 /* Foto de perfil */
 .profile-pic {
+  display: block; /* Garante que a imagem seja tratada como bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 20px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%; /* Bordas arredondadas */
+  object-fit: cover; /* Ajuste proporcional sem distorção */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
 }
 
 /* Sobre */
